@@ -18,7 +18,7 @@
     <ClCompile Include="c 개발일지.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="계산기 1.0v.c">
+    <ClCompile Include="계산기 1.0 v.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
