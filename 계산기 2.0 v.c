@@ -13,11 +13,20 @@ int gob(int num1, int num2) //°ö¼À
 }
 double div(double num1, double num2) //³ª´°¼À
 {
-	return num1 / num2;
+	    return num1 / num2;
 }
 int namaji(int num1, int num2) //³ª¸ÓÁö ¿¬»ê
 {
 	return num1 % num2;
+}
+int cb(int num1, int num2) //Á¶ÇÕ
+{
+	int sum = 1;
+	for (int i = num1; i >= num2 - num1; i--)
+		sum *= i;
+	for (int i = 1; i <= num2; i++)
+		sum /= i;
+	return sum;
 }
 
 void menu();
@@ -26,13 +35,14 @@ int sub(int num1, int num2);
 int gob(int num1, int num2);
 double div(double num1, double num2);
 int namaji(int num1, int num2);
+int cb(int num1, int num2);
 
 void menu() //Ã¹ ½ÇÇà È­¸é
 {
 	printf("---------------------\n");
 	printf("menu\n");
 	printf("---------------------\n");
-	printf("1. µ¡¼À\n2. –y¼À\n3. °ö¼À\n4. ³ª´°¼À\n5. ³ª¸ÓÁö\n¿øÇÏ´Â ¿¬»êÀ» ¼±ÅÃÇÏ¼¼¿ä(1~5): ");
+	printf("1. µ¡¼À\n2. –y¼À\n3. °ö¼À\n4. ³ª´°¼À\n5. ³ª¸ÓÁö\n6. Á¶ÇÕ\n7. ¼­·Î¼Ò ÆÇº°\n¿øÇÏ´Â ¿¬»êÀ» ¼±ÅÃÇÏ¼¼¿ä(1~7): ");
 }
 int main()
 {
@@ -64,6 +74,10 @@ int main()
 		else if (input == 5)
 		{
 			printf("¿¬»ê °á°ú: %d\n", namaji(num1, num2));
+		}
+		else if (input == 6)
+		{
+			printf("¿¬»ê °á°ú: %d\n", cb(num1, num2));
 		}
 		else
 			printf("¾ÆÁ÷ ¹Ì±¸Çö ±â´ÉÀÔ´Ï´Ù.\n");

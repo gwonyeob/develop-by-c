@@ -15,15 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="c 개발일지.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="계산기 1.0 v.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="계산기 2.0v.c">
+    <None Include="계산기 2.0 v.c">
       <Filter>소스 파일</Filter>
     </None>
   </ItemGroup>
