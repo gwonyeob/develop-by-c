@@ -1,22 +1,22 @@
-#include<stdio.h>
+ï»¿#include<stdio.h>
 #include<math.h>
-int add(int num1, int num2) //¿¬»ê ÇÔ¼ö µ¡¼À
+int add(int num1, int num2) //ì—°ì‚° í•¨ìˆ˜ ë§ì…ˆ
 {
 	return num1 + num2;
 }
-int sub(int num1, int num2) //–y¼À
+int sub(int num1, int num2) //Â–yì…ˆ
 {
 	return num1 - num2;
 }
-int gob(int num1, int num2) //°ö¼À
+int gob(int num1, int num2) //ê³±ì…ˆ
 {
 	return num1 * num2;
 }
-double div(double num1, double num2) //³ª´°¼À
+double div(double num1, double num2) //ë‚˜ëˆ—ì…ˆ
 {
 	return num1 / num2;
 }
-int namaji(int num1, int num2) //³ª¸ÓÁö ¿¬»ê
+int namaji(int num1, int num2) //ë‚˜ë¨¸ì§€ ì—°ì‚°
 {
 	return num1 % num2;
 }
@@ -29,55 +29,55 @@ int gob(int num1, int num2);
 double div(double num1, double num2);
 int namaji(int num1, int num2);
 
-void menu() //Ã¹ ½ÇÇà È­¸é
+void menu() //ì²« ì‹¤í–‰ í™”ë©´
 {
 	printf("---------------------\n");
 	printf("       menu\n");
 	printf("---------------------\n");
-	printf("1. µ¡¼À\n2. –y¼À\n3. °ö¼À\n4. ³ª´°¼À\n5. ³ª¸ÓÁö\n6. AÀÇ BÁ¦°ö\n7. ¾çÀÇ Á¦°ö±Ù\n¿øÇÏ´Â ¿¬»êÀ» ¼±ÅÃÇÏ¼¼¿ä(1~7): ");
+	printf("1. ë§ì…ˆ\n2. Â–yì…ˆ\n3. ê³±ì…ˆ\n4. ë‚˜ëˆ—ì…ˆ\n5. ë‚˜ë¨¸ì§€\n6. Aì˜ Bì œê³±\n7. ì–‘ì˜ ì œê³±ê·¼\nì›í•˜ëŠ” ì—°ì‚°ì„ ì„ íƒí•˜ì„¸ìš”(1~7): ");
 }
 int main()
 {
-	int input, num1, num2; //input ¿¬»ê ¼±ÅÃÇÏ´Â ¼ıÀÚ
+	int input, num1, num2; //input ì—°ì‚° ì„ íƒí•˜ëŠ” ìˆ«ì
 	char set;
 	while (1)
 	{
-		menu(); //¸Ş´ºÈ­¸é ºÒ·¯¿À±â
+		menu(); //ë©”ë‰´í™”ë©´ ë¶ˆëŸ¬ì˜¤ê¸°
 		scanf_s("%d", &input);
-		printf("Á¤¼ö 2°³¸¦ ÀÔ·ÂÇÏ¼¼¿ä ex)4 10: ");
+		printf("ì •ìˆ˜ 2ê°œë¥¼ ì…ë ¥í•˜ì„¸ìš” ex)4 10: ");
 		scanf_s("%d %d", &num1, &num2);
 
 		if (input == 1)
 		{
-			printf("¿¬»ê °á°ú: %d\n", add(num1, num2));
+			printf("ì—°ì‚° ê²°ê³¼: %d\n", add(num1, num2));
 		}
 		else if (input == 2)
 		{
-			printf("¿¬»ê °á°ú: %d\n", sub(num1, num2));
+			printf("ì—°ì‚° ê²°ê³¼: %d\n", sub(num1, num2));
 		}
 		else if (input == 3)
 		{
-			printf("¿¬»ê °á°ú: %d\n", gob(num1, num2));
+			printf("ì—°ì‚° ê²°ê³¼: %d\n", gob(num1, num2));
 		}
 		else if (input == 4)
 		{
-			printf("¿¬»ê °á°ú: %f\n", div(num1, num2));
+			printf("ì—°ì‚° ê²°ê³¼: %f\n", div(num1, num2));
 		}
 		else if (input == 5)
 		{
-			printf("¿¬»ê °á°ú: %d\n", namaji(num1, num2));
+			printf("ì—°ì‚° ê²°ê³¼: %d\n", namaji(num1, num2));
 		}
 		else if (input == 6)
 		{
-			printf("¿¬»ê °á°ú: %lf\n", pow(num1, num2));
+			printf("ì—°ì‚° ê²°ê³¼: %lf\n", pow(num1, num2));
 		}
 		else if (input == 7)
 		{
-			printf("¿¬»ê °á°ú: %lf %lf\n", sqrt(num1), sqrt(num2));
+			printf("ì—°ì‚° ê²°ê³¼: %lf %lf\n", sqrt(num1), sqrt(num2));
 		}
 		else
-			printf("¾ÆÁ÷ ¹Ì±¸Çö ±â´ÉÀÔ´Ï´Ù.\n");
-		printf("°è¼ÓÇÒ±î¿ä?(y/n): ");
+			printf("ì•„ì§ ë¯¸êµ¬í˜„ ê¸°ëŠ¥ì…ë‹ˆë‹¤.\n");
+		printf("ê³„ì†í• ê¹Œìš”?(y/n): ");
 		getchar();
 		scanf_s("%c", &set);
 		if (set == 'n')
@@ -86,13 +86,12 @@ int main()
 			continue;
 		else
 		{
-			printf("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù\n");
-			printf("´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä\n");
-			printf("°è¼ÓÇÒ±î¿ä?(y/n): ");
+			printf("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”\n");
+			printf("ê³„ì†í• ê¹Œìš”?(y/n): ");
 			getchar();
 			scanf_s("%c", &set);
 		}
 	}
 	return 0;
 }
-
