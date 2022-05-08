@@ -32,7 +32,7 @@ int namaji(int num1, int num2);
 void menu() //첫 실행 화면
 {
 	printf("---------------------\n");
-	printf("       menu\n");
+	printf("        menu\n");
 	printf("---------------------\n");
 	printf("1. 덧셈\n2. 뻴셈\n3. 곱셈\n4. 나눗셈\n5. 나머지\n6. A의 B제곱\n7. 양의 제곱근\n원하는 연산을 선택하세요(1~7): ");
 }
